@@ -1,0 +1,11 @@
+spring-boot.run.jvmArguments: --enable-preview
+
+maven.compiler:
+  enablePreview: true
+  showDeprecation: true
+  showWarnings: true
+
+# flatten-maven-plugin
+# https://www.mojohaus.org/flatten-maven-plugin/flatten-mojo.html#flattenMode
+flatten.mode: resolveCiFriendliesOnly
+updatePomFile: true

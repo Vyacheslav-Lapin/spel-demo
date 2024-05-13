@@ -1,0 +1,8 @@
+mail.credentials:
+  authMethod: basic
+  username: user
+  password: qwerty
+
+spring:
+  sql.init.mode: always
+  jpa.generate-ddl: true
