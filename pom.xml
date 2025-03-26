@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version>
+        <version>3.4.4</version>
     </parent>
 
     <groupId>pro.vlapin.demo</groupId>
@@ -16,23 +16,23 @@
     <properties>
 
         <!--region General-->
-        <java.version>22</java.version>
+        <java.version>23</java.version>
         <revision>0.0.1</revision>
         <minimal.maven.version>3.9.6</minimal.maven.version>
-        <spring-boot.version>3.2.5</spring-boot.version>
+        <spring-boot.version>3.4.4</spring-boot.version>
         <!--endregion-->
 
         <!--region Libs-->
-        <vavr.version>0.10.4</vavr.version>
+        <vavr.version>0.10.6</vavr.version>
         <springdoc-openapi.version>2.5.0</springdoc-openapi.version>
         <!--endregion-->
 
         <!--region linters-->
-        <checker.version>3.43.0</checker.version>
-        <annotations.version>24.1.0</annotations.version>
+        <checker.version>3.49.1</checker.version>
+        <annotations.version>26.0.2</annotations.version>
         <jcip-annotations.version>1.0</jcip-annotations.version>
-        <spotbugs.version>4.8.5</spotbugs.version>
-        <error_prone_annotations.version>2.27.1</error_prone_annotations.version>
+        <spotbugs.version>4.9.3</spotbugs.version>
+        <error_prone_annotations.version>2.37.0</error_prone_annotations.version>
         <!--endregion-->
 
         <!--region Test-libs-->
@@ -40,7 +40,7 @@
         <!--endregion-->
 
         <!--region Plugins-->
-        <flatten-maven-plugin.version>1.6.0</flatten-maven-plugin.version>
+        <flatten-maven-plugin.version>1.7.0</flatten-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
         <sonar-maven-plugin.version>3.11.0.3922</sonar-maven-plugin.version>
         <spotbugs-maven-plugin.version>4.8.5.0</spotbugs-maven-plugin.version>
@@ -57,7 +57,7 @@
         <!--region default-profile-->
         <maven.source.skip>true</maven.source.skip>
         <maven.antrun.skip>true</maven.antrun.skip>
-        <pmd.skip>true</pmd.skip>
+<!--        <pmd.skip>true</pmd.skip>-->
         <!--endregion-->
 
     </properties>
@@ -453,7 +453,7 @@
                 <maven.sourceDirectory>${lombok.outputDirectory}</maven.sourceDirectory>
                 <maven.source.skip>false</maven.source.skip>
                 <maven.antrun.skip>false</maven.antrun.skip>
-                <pmd.skip>false</pmd.skip>
+<!--                <pmd.skip>false</pmd.skip>-->
             </properties>
         </profile>
     </profiles>

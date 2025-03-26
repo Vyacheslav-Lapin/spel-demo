@@ -1,5 +1,6 @@
 package pro.vlapin.demo.speldemo;
 
+import java.util.List;
 import lombok.experimental.ExtensionMethod;
 import lombok.val;
 import org.intellij.lang.annotations.Language;
@@ -21,8 +22,8 @@ class SpelDemoApplicationTests {
         @Language("SpEL") val intListExpression = "{ 0, 1, 2, 3 }";
 
         // when
-        val intsWithLombok = intListExpression.<Integer>execute2List();
-        val intsWithoutLombok = SpelUtils.<Integer>execute2List(intListExpression);
+        final List<Integer> intsWithLombok = intListExpression.<Integer>execute2List();
+        final List<Integer> intsWithoutLombok = SpelUtils.execute2List(intListExpression);
 
         // then
         assertThat(intsWithLombok).isNotNull().isNotEmpty().containsExactly(0, 1, 2, 3);
