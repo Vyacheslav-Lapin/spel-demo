@@ -3,9 +3,8 @@
  *
  * @author Vyacheslav Lapin
  */
-@DefaultQualifier(NotNull.class)
+//@DefaultQualifier(NotNull.class)
+@NullMarked
 package pro.vlapin.demo.speldemo;
 
-import org.checkerframework.framework.qual.DefaultQualifier;
-import org.jetbrains.annotations.NotNull;
-
+import org.jspecify.annotations.NullMarked;
